@@ -1,0 +1,25 @@
+.first-img{
+  height: 80px;
+  width: 80px;
+}
+h5 {
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+.Item {
+  display: flex;
+  flex-direction: row;
+}
+.Item-1 {
+  padding: 0.5rem;
+}
+.Item:hover {
+  color:#015fc9 !important;
+}
+.second-img{
+height:400px ;
+}
+.cards{
+  width: 800px;
+  height: 100px;
+}

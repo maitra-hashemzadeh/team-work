@@ -71,7 +71,7 @@
   transition: all 400ms ease-out;
 }
 .btn-footer:hover {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .btn-footer__span:hover {
   color: #fff;

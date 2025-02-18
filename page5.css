@@ -1,0 +1,114 @@
+/*
+  ==========
+    Navbar
+  ==========
+*/
+
+.navbar-brand {
+  max-width: 23.65 !important;
+}
+.btn {
+  border-radius: 0.6rem !important;
+  outline: none !important;
+  border: none !important;
+}
+.btn:hover {
+  background-color: #6edff6;
+}
+.img-fluid {
+  width: 7rem;
+}
+.nav-link {
+  text-align: left !important;
+  font-weight: 600 !important;
+  margin-left: 2rem;
+  padding: 0.5rem 0 !important;
+}
+.nav-item:hover {
+  color: #015fc9 !important;
+}
+.active {
+  color: #015fc9 !important;
+}
+.show {
+  top: 4rem;
+  width: 10rem;
+  padding: 0.5rem 0;
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+.show .dropdown-subitem {
+  padding: 0.25rem 1rem;
+}
+/* //////////////////////////////////// */
+.page-header {
+  background-image: url(./img/DALL·E\ 2025-02-18\ 15.49.33\ -\ A\ minimalistic\ hero\ section\ background\ for\ a\ cinema\ website\,\ horizontal\ layout\,\ simple\ red-toned\ background\ with\ subtle\ gradients\,\ very\ minimal\ design.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ------------------------------------------------------------------------ */
+
+/*
+    ==========
+      Footer
+    ==========
+  */
+
+.footer {
+  color: rgb(167, 168, 180) !important;
+}
+.footer-icon {
+  border: 1px solid rgb(167, 168, 180) !important;
+  color: rgb(167, 168, 180) !important;
+  transition: all 400ms ease-out;
+}
+.footer-icon:hover {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+  color: #6edff6 !important;
+}
+.btn-footer {
+  transition: all 400ms ease-out !important;
+  color: rgb(167, 168, 180) !important;
+  padding: 0 !important;
+}
+.btn-footer__span {
+  transition: all 400ms ease-out;
+}
+.btn-footer:hover {
+  background-color: transparent;
+}
+.btn-footer__span:hover {
+  color: #fff;
+  font-size: 1.2rem !important;
+}
+.input__footer {
+  color: rgb(167, 168, 180) !important;
+}
+.input__footer::placeholder {
+  color: rgb(167, 168, 180);
+}
+.btn-secondary:hover {
+  background-color: #015fc9 !important;
+}
+a {
+  text-decoration: none !important;
+}
+.copyright {
+  border-top: 0.8px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+.back-to-up {
+  position: absolute;
+  bottom: 2rem;
+  right: 1.5rem;
+}
+
+/* --------------------------------------------- */
+
+@media screen and (min-width: 922px) {
+  .img-fluid {
+    width: 10rem;
+  }
+}

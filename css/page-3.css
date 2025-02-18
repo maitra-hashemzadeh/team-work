@@ -47,8 +47,8 @@
     }
     
     .card-hover:hover > .card-content > .content-hover {
-      transform: translateY(-6rem)!important;
-      opacity: 1;
+      /* transform: translateY(-6rem)!important; */
+      opacity: 1 !important;
     }
     
     .card-img {
@@ -63,7 +63,7 @@
     
     .content-hover {
       position: absolute!important;
-      top: 100%!important;
+      bottom: 0;
       left: 0!important;
       width: 100%!important;
       background-color: white!important;

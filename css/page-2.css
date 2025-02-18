@@ -1,0 +1,44 @@
+.first-img {
+    max-height: 80px;
+    max-width: 80px;
+  }
+  .second-img {
+    background-image: url(https://i0.wp.com/maxblizz.com/wp-content/uploads/2024/12/Sonic-The-Hedgehog-36.jpg?resize=1140%2C477&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+  .item-1{
+    text-decoration: none;
+  }
+  .item-1:hover{
+    color: #015fc9 !important; ;
+  }
+  .item-2{
+    text-decoration: none;
+  }
+  .item-2::before{
+  content: "/";
+  }
+  .item-2:hover{
+    color: #015fc9 !important; ;
+  }
+  .item-3::before{
+    content: "/";
+    }
+    .item-3{
+      color: #015fc9!important;
+    }
+    .form img {
+      width: 45px;
+      height: 45px;
+      margin-right: 8px;
+    }
+    .form {
+      color: black;
+    }
+    .form-input,
+    .num-parent {
+      background-color: black;
+      color: beige;
+    } 

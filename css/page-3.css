@@ -1,0 +1,67 @@
+.first-img {
+    max-height: 80px;
+    max-width: 80px;
+  }
+  .second-img {
+    background-image: url(https://www.bollywoodhungama.com/wp-content/uploads/2024/01/The-Beekeeper-English-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+  /* for distans ask qu from MR */
+  .Menu {
+    font-size: 3rem !important;
+    font-weight: 700px !important;
+  }
+  .item-1{
+    text-decoration: none;
+  }
+  .item-1:hover{
+    color: #015fc9 !important; ;
+  }
+  .item-2{
+    text-decoration: none;
+  }
+  .item-2::before{
+  content: "/";
+  }
+  .item-2:hover{
+    color: #015fc9 !important; ;
+  }
+  .item-3::before{
+    content: "/";
+    }
+    .item-3{
+      color: #015fc9!important;
+    } 
+.second-cards .card-body img {
+    width: 100%;
+    height: auto;
+  }
+  .second-cards .card-body {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 48px 12px #dddddd3d;
+  }
+  /* افکت سکشن سوم */
+  .second-cards .title-hidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(50%);
+    background-color: white;
+    transition: all 0.4s ease-out;
+  }
+  .second-cards .card-body:hover .title-hidden {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* افکت تصاویر کارت های سکشن سوم */
+  .card-image {
+    transition: all 0.4s;
+  }
+  .second-cards .card-body:hover .card-image {
+    transform: scale(1.1);
+  }

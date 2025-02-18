@@ -1,0 +1,68 @@
+.first-img {
+  max-height: 80px;
+  max-width: 80px;
+}
+.second-img {
+  background-image: url(https://www.bollywoodhungama.com/wp-content/uploads/2024/01/The-Beekeeper-English-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+/* for distans ask qu from MR */
+.Menu {
+  font-size: 3rem !important;
+  font-weight: 700px !important;
+}
+.item-1 {
+  text-decoration: none;
+}
+.item-1:hover {
+  color: #015fc9 !important;
+}
+.item-2 {
+  text-decoration: none;
+}
+.item-2::before {
+  content: "/";
+}
+.item-2:hover {
+  color: #015fc9 !important;
+}
+.item-3::before {
+  content: "/";
+}
+.item-3 {
+  color: #015fc9 !important;
+}
+.abu-box2 img {
+  width: 100px;
+  height: 100px;
+}
+.doc-box,
+.som-box2 {
+  height: 421px;
+}
+.som-box2 .carousel-item {
+  min-height: 376px;
+}
+.doc-box img {
+  border: dashed 1.5px var(--border-color);
+}
+.img1 {
+  top: 40px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+}
+.img2 {
+  bottom: 150px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+}
+.img3 {
+  bottom: 50px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+}

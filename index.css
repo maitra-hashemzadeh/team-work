@@ -1,0 +1,177 @@
+@keyframes scale-icon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Costumize */
+.btn-danger:hover {
+  background-color: #ef5350 !important;
+}
+.btn-secondary:hover {
+  background-color: #ef5350 !important;
+}
+.nav-item:hover {
+  color: #ef5350 !important;
+}
+.active {
+  color: #ef5350 !important;
+}
+.footer-icon:hover {
+  color: #ef5350 !important;
+}
+/* TO-DO:difine a color for bg-body! */
+
+/* 
+  ==================================
+   The carousel in the top of paeg
+  ==================================
+*/
+
+.carousel-item {
+  max-height: 100rem !important;
+}
+/* Check the this rule for responsive */
+.carousel-caption {
+  left: 10rem;
+  /* The below properties are for align in center and works with height given above  */ /* TO-DO */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-btn {
+  width: 3rem;
+  height: 3rem;
+  margin: 25% 2rem 0 2rem;
+  border-radius: 50% !important;
+  background-color: #d32f2f;
+}
+.bg-blur {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.3rem);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================ */
+
+/*
+  =========================
+    The cards in the page
+  =========================
+*/
+
+.card-title {
+  max-width: 23rem;
+}
+.btn-haver-danger {
+  transition: all 200ms 120ms linear !important;
+}
+.btn-haver-danger:hover {
+  color: white !important;
+  background-color: #ef5350 !important;
+}
+
+/* ============================================ */
+
+/*
+  =================================
+    The Movies of the day section
+  =================================
+*/
+
+.card-img {
+  width: 100% !important;
+  transition: all 200ms 100ms linear !important;
+}
+.card-hover {
+  transition: all 200ms 100ms linear !important;
+}
+.card-hover:hover > .banner > .card-img {
+  transform: scale(1.1);
+}
+.card-hover:hover > .card-content > .content-hover {
+  transform: translateY(-8.5rem);
+}
+.card-content {
+  height: 4.5rem;
+}
+.content-hover {
+  background-color: white;
+  transition: all 200ms 100ms linear !important;
+}
+.card-btn-container {
+  width: 100% !important;
+  margin: 1rem auto 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+}
+.card-btn {
+  color: red !important;
+  background-color: whiite !important;
+  border: 0.1rem solid red !important;
+  padding: 0.15rem 0.4rem !important;
+  transition: all 200ms 100ms linear;
+}
+.card-btn:hover {
+  color: white !important;
+  background-color: red !important;
+}
+
+/* ============================================ */
+
+/*
+  ================
+    Last Section
+  ================
+*/
+
+.ani {
+  border: 0.1rem dashed;
+  animation: scale-icon 1.5s linear infinite;
+  /* position: absolute; */
+}
+
+.ani-left-top {
+  width: 70px;
+  height: 70px;
+  top: 2rem;
+  right: 2rem;
+}
+.ani-left-middle {
+  width: 60px;
+  height: 60px;
+  top: 10rem;
+  left: 2rem;
+}
+.ani-left-bottom {
+  width: 50px;
+  height: 50px;
+  bottom: -19rem;
+  right: 2rem;
+}
+.ani-right-top {
+  width: 70px;
+  height: 70px;
+  left: 10rem;
+  top: 2rem;
+}
+.ani-right-middle {
+  width: 60px;
+  height: 60px;
+  top: 10rem;
+  left: 2rem;
+}
+.ani-right-bottom {
+  width: 50px;
+  height: 50px;
+  bottom: -19rem;
+  right: 2rem;
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Install Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- ======================================= -->
+
+    <!-- Header & Footer Styles -->
+    <link rel="stylesheet" href="./header-and-footer.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- ======================================= -->
+
+    <!-- For Icons (i elements) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+
+    <!-- ======================================= -->
+  </head>
+  <body style="cursor: default;">
+    <header class="header">
+      <!-- Navbar that have a container -->
+      <nav class="navbar navbar-expand-lg bg-light px-4 px-lg-5 sticky-top">
+        <div class="container-fluid">
+          <!-- #Logo & Website Title -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <h1 class="m-0">
+              <img
+                src="./img/Movie-logo.avif"
+                alt="Logo"
+                class="me-2 img-fluid"
+                
+              />APSCinema
+            </h1>
+          </a>
+          <!-- #Menu Button in Mobile Size -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- #Menu -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div
+              class="navbar-nav bg-light pe-4 py-3 py-lg-0 rounded mx-auto d-flex align-items-center bg-white"
+            >
+              <a class="nav-item nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+              <a class="nav-item nav-link" href="./cinema.html">Cinema</a>
+              <a class="nav-item nav-link" href="./actors.html">Actors</a>
+              <!-- The dropdown menu-item -->
+              <div class="nav-item dropdown">
+                <a
+                  class="nav-item nav-link dropdown-toggle ps-"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu Item 4
+                </a>
+                <!-- The dropdown content -->
+                <div class="dropdown-menu border-0 m-0 bg-white">
+                  <a class="dropdown-item" href="./page-1.html">Sub Menu 1</a>
+                  <a class="dropdown-item" href="./page-2.html">Sub Menu 2</a>
+                  <a class="dropdown-item" href="./page-3.html">Sub Menu 3</a>
+                  <a class="dropdown-item" href="./page-4.html">Sub Menu 4</a>
+                </div>
+                
+              <a class="nav-item nav-link" href="./page5.html">Menu Item 5</a>
+            </div>
+          </div>
+          <!-- #SignIn Button -->
+          <button type="button" class="btn btn-danger px-3 d-none d-lg-block">
+            SignIn
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- The carousel in the top of page -->
+      <section class="carousel" style="max-height: 40rem !important;">
+        <div
+          id="carouselExampleRide"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="max-height: 40rem !important;">
+              <img
+                src="./img/carousel-home-london.jpg"
+                class="d-block w-100 h-100"
+                alt="London"
+              />
+              <!-- The carousel caption that not responsive! -->
+              <!-- TO-DO: Check the carousel-caption rule for responsive -->
+              <div class="carousel-caption text-start w-50 d-block">
+                <div class="row">
+                  <div class="col-12 col-lg-6 p-4 bg-blur rounded">
+                    <h1 class="text-danger h1 mb-4">London</h1>
+                    <p class="text-dark mb-5 fs-sm-0 fs-lg-5">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nulla rem nisi, eaque ipsa numquam ducimus eos animi
+                      recusandae!
+                    </p>
+                    <button type="button" class="btn btn-danger px-5 py-3">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" style="max-height: 40rem !important;">
+              <img
+                src="./img/carousel-home-leipzig.jpg"
+                class="d-block w-100 h-100"
+                alt="Leipzig"
+
+              />
+              <!-- The carousel caption that not responsive! -->
+              <!-- TO-DO: Check the carousel-caption rule for responsive -->
+              <div class="carousel-caption text-start w-50 d-block">
+                <div class="row">
+                  <div class="col-12 col-lg-6 p-4 bg-blur rounded">
+                    <h1 class="text-danger h1 mb-4">Leipzig</h1>
+                    <p class="text-dark mb-5 fs-sm-0 fs-lg-5">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nulla rem nisi, eaque ipsa numquam ducimus eos animi
+                      recusandae!
+                    </p>
+                    <button type="button" class="btn btn-danger px-5 py-3">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" style="max-height: 40rem !important;">
+              <img
+                src="./img/carousel-home-ciudad de mexico.jpg"
+                class="d-block w-100 h-100"
+                alt="Ciudad de Mexico"
+              />
+              <!-- The carousel caption that not responsive! -->
+              <!-- TO-DO: Check the carousel-caption rule for responsive -->
+              <div class="carousel-caption text-start w-50 d-block">
+                <div class="row">
+                  <div class="col-12 col-lg-6 p-4 bg-blur rounded">
+                    <h1 class="h1 mb-4 text-danger">Ciudad de Mexico</h1>
+                    <p class="text-dark mb-5 fs-sm-0 fs-lg-5">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nulla rem nisi, eaque ipsa numquam ducimus eos animi
+                      recusandae!
+                    </p>
+                    <button type="button" class="btn btn-danger px-5 py-3">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-btn"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-btn"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- The cards in the page -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <!-- title of the section -->
+          <h2
+            class="mx-auto text-center display-6 m-0 mb-5 fw-bolder card-title"
+          >
+            Meet the Stars
+          </h2>
+          <!-- The dards container  -->  <!-- when used the .g-4, horizontal space was not set. To solve the problem, the columns was created separately and content was placed in another <div> inside columns. -->
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <!-- part of title in the card -->
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Tom Hanks.jpeg" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Tom Hanks</h3>
+                </div>
+                <!-- a container for content of card. because I need horizontal padding for this part -->
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;"> Tom Hanks was born on July 9, 1956, in the United States. He is famous for his roles in both drama and comedy films. He has won the Academy Award for Best Actor twice.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Meryl Streep.jpg" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Meryl Streep</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;">Meryl Streep was born on June 22, 1949, in the United States. She has been nominated for an Academy Award over 20 times.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Leonardo DiCaprio.jpeg" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Leonardo DiCaprio</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;">Born on August 7, 1975, in South Africa, Charlize Theron won the Academy Award for Best Actress for her role in Monster.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Johnny Depp.png" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Johnny Depp</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;">Johnny Depp was born on June 9, 1963, in the United States. Over his career, he has earned multiple award nominations and is recognized for his unique and diverse roles in both mainstream and independent films.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Scarlett Johansson.jpeg" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Scarlett Johansson</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;">Scarlett Johansson was born on November 22, 1984, in the United States. She has received multiple awards and nominations throughout her career, including a Tony Award and a BAFTA Award.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-danger py-3 px-3 rounded-end ">
+                    <img src="./img/Charlize Theron.jpeg" alt="Card-Image" class="" style="width: 4rem !important; height: 4rem !important;">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Charlize Theron</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary" style="height: 7.5rem !important;">Born on August 7, 1975, in South Africa, Charlize Theron won the Academy Award for Best Actress for her role in Monster.</p>
+                  <a href="#" class="btn btn-haver-danger btn-light text-danger text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- The Newsletter Section -->
+       <!-- TO-DO: Set a Image for background -->
+      <section class="text-bg-danger py-5">
+        <div class="container">
+          <div class="row py-5">
+            <!-- Part Left -->
+            <div class="col-12 col-lg-6">
+              <h2 class="fw-bolder display-6 mb-5">Stay Updated with the Latest in Cinema</h2>
+              <p class="mb-5 fs-5">Subscribe to our newsletter and never miss out on the latest movie releases, exclusive interviews, reviews, and behind-the-scenes stories. Stay connected and keep your finger on the pulse of the film world!</p>
+              <div class="bg-white w-100 p-3 rounded">
+                <div class="bg-danger d-flex align-items-center rounded py-3 px-2">
+                  <div class="">
+                    <i class="fas fa-phone" style="font-size: 45px;"></i>
+                  </div>
+                  <span class="text-white fs-6 fw-bolder ms-3">Phone Number: +9123456789</span>
+                </div>
+              </div>
+            </div>
+            <!-- Part Right -->
+            <div class="col-12 col-lg-6">
+              <form action="#" class="bg-white rounded p-5">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="text" class="form-control text-dark border-2 border-danger-subtle" id="username" placeholder="Username">
+                        <label for="username" class="text-secondary">Username</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="email" class="form-control text-dark border-2 border-danger-subtle" id="email" placeholder="Email">
+                        <label for="email" class="text-secondary">Email Address</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control text-dark border-2 border-danger-subtle" id="pass" placeholder="Password">
+                        <label for="pass" class="text-secondary">Password</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control text-dark border-2 border-danger-subtle" id="conpass" placeholder="Confirm Password">
+                        <label for="conpass" class="text-secondary">Confirm Password</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <div class="form-floating">
+                        <textarea class="form-control text-dark border-danger-subtle border-2" id="text" style="height: 5rem;" rows="5"></textarea>
+                        <label for="text" class="text-secondary">Massage</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <bottun class="btn btn-danger py-3 px-5">Send</bottun>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Movies of the day Section -->
+      <section class="bg-body py-5">
+        <div class="container">
+          <h2 class="fs-1 my-5 text-center mx-auto" style="max-width: 25rem;">
+            Hot Off the Screen: New Movies Now
+          </h2>
+          <!-- The cards in the this section -->
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="./img/the gorge.webp" alt="Card Image" class="card-img rounded-top w-100 h-100">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">The Gorge</h4>
+                  <span>London</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">The Gorge</h4>
+                    <span>London</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="./img/mufasa.webp" alt="Card Image w-100" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">Mufasa</h4>
+                  <span>Leipzig</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">Mufasa</h4>
+                    <span>Leipzig</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="./img/the white lotus.webp" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">The White Lotus</h4>
+                  <span>Ciudad de Mexico</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">The White Lotus</h4>
+                    <span>Ciudad de Mexico</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="./img/the brutalist.webp" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">The Brutalist</h4>
+                  <span>London</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">The Brutalist</h4>
+                    <span>London</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Last Section -->
+      <section class="text-center bg-body py-5">
+        <div class="container">
+          <h2 class="fs-1 mx-auto mb-5" style="max-width: 25rem;">New on Screen: Must-See Animations</h2>
+          <div class="row">
+            <div class="col-lg-3 d-none d-lg-block p-0">
+              <div class="position-relative">
+                <div class="ani-left-top ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/animasyon.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+                <div class="ani-left-middle ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/animation.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+                <div class="ani-left-bottom ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/to watch.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-0">
+              <div class="">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                  <!-- The carousel content -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./img/spider-man.jpeg" class="d-block mx-auto mb-4 rounded" style="height: 100px !important; width: 100px !important;" alt="First Image">
+                      <div class=" text-dark text-center w-100">
+                        <p>This animation is a sequel to Spider-Man: Into the Spider-Verse and follows Miles Morales as he encounters different Spider-Men from parallel worlds. He must face a new threat that could potentially destroy all Spider-Men across the multiverse.</p>
+                        <h5>Spider-Man: Across the Spider-Verse</h5>
+                        <span>Joaquim Dos Santos</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="./img/elemental.jpeg" class="d-block mx-auto mb-4 rounded" style="height: 100px !important;" alt="Second Image">
+                      <div class=" text-dark text-center w-100">
+                        <p>In a world of elements where fire, water, earth, and air have distinct personalities, two beings named "Ember" (Fire) and "Wade" (Water) meet. They must overcome their differences and face social and family challenges together.
+                        </p>
+                        <h5>Elemental</h5>
+                        <span>Peter Sohn</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="./img/the-sae-beast.jpeg" class="d-block mx-auto mb-4 rounded" style="height: 100px !important;" alt="Second Image">
+                      <div class=" text-dark text-center w-100">
+                        <p>This animation tells the story of a monster hunter named Jacob, who is on a quest to discover mythical sea creatures. When he crosses paths with a girl named "Maisie," his life changes, and he embarks on a new adventure.
+                        </p>
+                        <h5>The Sea Beast</h5>
+                        <span>Chris Williams</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- The bottun for slide -->
+                  <div class="mt-4">
+                    <button class="bg-danger btn p-0" style="height: 2.5rem; width: 2.5rem;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="bg-danger btn p-0" style="height: 2.5rem; width: 2.5rem;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block p-0">
+              <div class="position-relative">
+                <div class="ani-right-top ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/oscars.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+                <div class="ani-right-middle ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/annie awards.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+                <div class="ani-right-bottom ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="./img/contenders.jpg" alt="Image Icon" class="w-100 h-100 rounded">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="container-fluid text-bg-dark mt-5 pt-5"
+      data-wow-delay="0.1s"
+    >
+      <!-- #Footer Top -->
+      <div class="container footer py-5">
+        <div class="row g-5">
+          <!-- Footer Caption & Social-media Icons -->
+          <div class="col-lg-3 col-md-6">
+            <p>
+              Step into a world of cinematic magic! From the latest blockbusters to timeless classics, we bring you the ultimate movie experience. Enjoy exclusive screenings, special offers, and a cozy atmosphere designed for true film lovers
+            </p>
+            <div class="d-flex pt-2">
+              <a href="#" class="btn btn-square me-1 footer-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-square me-1 footer-icon">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-square me-1 footer-icon">
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a href="#" class="btn btn-square me-1 footer-icon">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+          <!-- #Footer Address -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Contact Us</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i> ApsCinema, 123 Movies Street, Tehran, Iran
+            </p>
+            <p><i class="bi bi-telephone-fill"></i> +982176543210</p>
+            <p><i class="fa fa-envelope me-3"></i> contact@ApsCinema.com</p>
+          </div>
+          <!-- #Footer Links -->
+           <!-- TO-DO: fix the hover effect -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Useful Links</h5>
+            <a href="#" class="btn btn-link btn-footer me-1 mb-1 w-100 text-start"
+              ><i class="bi bi-chevron-right"></i>
+              <span class="btn-footer__span">Now Showing</span></a
+            >
+            <a href="#" class="btn btn-link btn-footer me-1 mb-1 w-100 text-start"
+              ><i class="bi bi-chevron-right"></i>
+              <span class="btn-footer__span">Coming Soon</span></a
+            >
+            <a href="#" class="btn btn-link btn-footer me-1 mb-1 w-100 text-start"
+              ><i class="bi bi-chevron-right"></i>
+              <span class="btn-footer__span">Book Tickets</span></a
+            >
+            <a href="#" class="btn btn-link btn-footer me-1 mb-1 w-100 text-start"
+              ><i class="bi bi-chevron-right"></i>
+              <span class="btn-footer__span">Spepial Offers</span></a
+            >
+            <a href="#" class="btn btn-link btn-footer me-1 mb-1 w-100 text-start"
+              ><i class="bi bi-chevron-right"></i>
+              <span class="btn-footer__span">Events & News</span></a
+            >
+          </div>
+          <!-- #Footer Newsletter (Input in Footer) -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Newsletter Subcription</h5>
+            <p>Subscribe to our newsletter and be the first to know about the latest movies and special offers.</p>
+            <div class="position-relative mx-auto" style="max-width: 400px">
+              <input
+                type="text"
+                class="form-control bg-transparent w-100 py-3 ps-4 pe-5 input__footer"
+                placeholder="email"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary text-light bg-info position-absolute top-0 end-0 py-2 mt-2 me-2"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- #Footer Bottom -->
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row py-4">
+            <!-- #Footer Copyright Left -->
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              © <a href="#" class="text-info">2025 All right reserved</a>, Crafted with care by our team.
+            </div>
+            <!-- #Footer Copyright Right -->
+            <div class="col-md-6 text-center text-md-end">
+              Farnoosh, Mitra, Yasaman, Faeze, Mohammadreza <a href="#" class="text-info">our team</a>
+              <br />
+              APSignals <a href="#" class="text-info">]Team name</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-up">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- ================================================================================ -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

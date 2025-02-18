@@ -3,7 +3,7 @@
     max-width: 80px;
   }
   .second-img {
-    background-image: url(../image/Sonic-the-Hedgehog-3-FF-032K.jpg);
+    background-image: url(https://upload.wikimedia.org/wikipedia/it/thumb/b/b3/Fotogramma_dal_trailer_del_film_d%27animazione_%22Away%22_%282019%29.jpeg/800px-Fotogramma_dal_trailer_del_film_d%27animazione_%22Away%22_%282019%29.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
@@ -39,6 +39,6 @@
     }
     .form-input,
     .num-parent {
-      background-color: black;
+      background-color: rgb(124, 9, 9);
       color: black;
     } 

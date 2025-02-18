@@ -1,0 +1,220 @@
+.bg-dark {
+  background-color: rgb(21, 35, 60) !important;
+}
+.page-header {
+  background: url(https://s3picturehouses.s3.eu-central-1.amazonaws.com/header/ph_15578516125cdaeddcb58a7.jpg)
+    center center no-repeat;
+  background-size: cover;
+}
+/* header */
+.navbar-brand {
+  max-width: 23.65 !important;
+}
+.btn {
+  border-radius: 0.6rem !important;
+  outline: none !important;
+  border: none !important;
+}
+.btn:hover {
+  background-color: #6edff6;
+}
+.img-fluid {
+  width: 7rem;
+}
+.nav-link {
+  text-align: left !important;
+  font-weight: 600 !important;
+  margin-left: 2rem;
+  padding: 0.5rem 0 !important;
+}
+.nav-item:hover {
+  color: #015fc9 !important;
+}
+.active {
+  color: #015fc9 !important;
+}
+.show {
+  top: 4rem;
+  width: 10rem;
+  padding: 0.5rem 0;
+  border-radius: 0.4rem;
+  background-color: #fff;
+}
+.show .dropdown-subitem {
+  padding: 0.25rem 1rem;
+}
+
+/* main */
+
+div.text-box {
+  background-color: rgb(132, 6, 6);
+}
+.text-box h1 {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.text-box h3 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+p.text-box {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.text-box h5 {
+  font-size: 0.8rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.display-4,
+.display-6,
+.display-5 {
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+.page-header li a {
+  color: #b2b4b6;
+}
+.page-header li:nth-child(3) a{
+  color: #e50914;
+}
+li a {
+  text-decoration: none !important;
+}
+.position-raletive {
+  min-height: 400px !important;
+}
+.container.facts .facts-text .h-100 {
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 992px) {
+  .container.facts {
+    max-width: 100% !important;
+  }
+}
+@media (min-width: 992px) {
+  .container.facts .facts-text.text-1 {
+    padding-left: 6rem;
+  }
+}
+.btn {
+  transition: all 0.5s linear !important;
+}
+.btn.btn-square:hover {
+  background-color: rgb(85, 85, 85) !important;
+}
+.team-item {
+  position: relative;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+.team-text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.team-item:hover .team-text {
+  bottom: 0;
+  opacity: 1;
+}
+.team-item .image {
+  background: url(./images/luggage.png) no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 118px;
+  margin: 10px 0 40px 0;
+}
+.team-item .image-2 {
+  background: url(./images/wheelchair.png) no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 118px;
+  margin: 10px 0 40px 0;
+}
+.team-item .image-3 {
+  background: url(./images/seats-hall.png) no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 118px;
+  margin: 10px 0 40px 0;
+}
+.team-item .image-4 {
+  background: url(./images/special-offers.png) no-repeat;
+  background-position: center top ;
+  width: 100%;
+  height: 118px;
+  
+  margin: 10px 0 40px 0;
+}
+.team-item a {
+  color: white;
+  text-decoration: none;
+  background-color: #e2124d;
+  display: inline-block;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* footer */
+
+.footer {
+  color: rgb(167, 168, 180) !important;
+}
+.footer-icon {
+  border: 1px solid rgb(167, 168, 180) !important;
+  color: rgb(167, 168, 180) !important;
+  transition: all 400ms ease-out;
+}
+.footer-icon:hover {
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+  color: #6edff6 !important;
+}
+.btn-footer {
+  transition: all 400ms ease-out !important;
+  color: rgb(167, 168, 180) !important;
+  padding: 0 !important;
+}
+.btn-footer__span {
+  transition: all 400ms ease-out;
+}
+.btn-footer:hover {
+  background-color: transparent;
+}
+.btn-footer__span:hover {
+  color: #fff;
+  font-size: 1.2rem !important;
+}
+.input__footer {
+  color: rgb(167, 168, 180) !important;
+}
+.input__footer::placeholder {
+  color: rgb(167, 168, 180) !important;
+}
+.btn-secondary:hover {
+  background-color: #015fc9 !important;
+}
+a {
+  text-decoration: none !important;
+}
+.copyright {
+  border-top: 0.8px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+.back-to-up {
+  position: absolute;
+  bottom: 2rem;
+  right: 1.5rem;
+}
+
+
+/* --------------------------------------------- */
+
+@media screen and (min-width: 922px) {
+  .img-fluid {
+    width: 10rem;
+  }
+}

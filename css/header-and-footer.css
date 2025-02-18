@@ -81,7 +81,7 @@
   color: rgb(167, 168, 180) !important;
 }
 .input__footer::placeholder {
-  color: rgb(167, 168, 180);
+  color: rgb(167, 168, 180) !important;
 }
 .btn-secondary:hover {
   background-color: #015fc9 !important;

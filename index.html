@@ -16,6 +16,7 @@
 
     <!-- Header & Footer Styles -->
     <link rel="stylesheet" href="./header-and-footer.css" />
+    <link rel="stylesheet" href="./index.css" />
 
     <!-- ======================================= -->
 
@@ -33,6 +34,7 @@
   </head>
   <body>
     <header class="header">
+      <!-- Navbar that have a container -->
       <nav class="navbar navbar-expand-lg bg-light px-4 px-lg-5 sticky-top">
         <div class="container-fluid">
           <!-- #Logo & Website Title -->
@@ -67,6 +69,7 @@
               >
               <a class="nav-item nav-link" href="#">Menu Item 2</a>
               <a class="nav-item nav-link" href="#">Menu Item 3</a>
+              <!-- The dropdown menu-item -->
               <div class="nav-item dropdown">
                 <a
                   class="nav-item nav-link dropdown-toggle ps-"
@@ -76,12 +79,15 @@
                 >
                   Menu Item 4
                 </a>
+                <!-- The dropdown content -->
                 <div class="dropdown-menu border-0 m-0 bg-white">
                   <a class="dropdown-item" href="#">Sub Menu 1</a>
                   <a class="dropdown-item" href="#">Sub Menu 2</a>
                   <a class="dropdown-item" href="#">Sub Menu 3</a>
                   <a class="dropdown-item" href="#">Sub Menu 4</a>
                 </div>
+                <!-- The dropdown content that apears on hover -->
+                 <!-- TO_DO: create hover effect -->
                 <div class="show d-none">
                   <a class="dropdown-subitem" href="#">Sub Menu 1</a>
                   <a class="dropdown-subitem" href="#">Sub Menu 2</a>
@@ -99,7 +105,452 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- The carousel in the top of page -->
+      <section class="carousel">
+        <div
+          id="carouselExampleRide"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="height: auto !important">
+              <img
+                src="https://fakeimg.pl/1920x1018"
+                class="d-block w-100"
+                alt="First"
+              />
+              <!-- The carousel caption that not responsive! -->
+              <!-- TO-DO: Check the carousel-caption rule for responsive -->
+              <div class="carousel-caption text-start w-50 d-block">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <h1 class="text-dark h1 mb-4">First Title</h1>
+                    <p class="text-secondary mb-5 fs-sm-0 fs-lg-5">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Nulla rem nisi, eaque ipsa numquam ducimus eos animi
+                      recusandae!
+                    </p>
+                    <button type="button" class="btn btn-primary px-5 py-3">
+                      More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-btn"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-btn"
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- The cards in the page -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <!-- title of the section -->
+          <h2
+            class="mx-auto text-center display-6 m-0 mb-5 fw-bolder card-title"
+          >
+            Lorem ipsum dolor sit amet
+          </h2>
+          <!-- The dards container  -->  <!-- when used the .g-4, horizontal space was not set. To solve the problem, the columns was created separately and content was placed in another <div> inside columns. -->
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <!-- part of title in the card -->
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <!-- a container for content of card. because I need horizontal padding for this part -->
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shado">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="py-5 rounded bg-body shadow">
+                <div class="d-flex align-items-center pe-2">
+                  <div class="d-inline-block  bg-primary py-3 px-3 rounded-end ">
+                    <img src="https://fakeimg.pl/64x64" alt="Card-Image" class="">
+                  </div>
+                  <h3 class="text-dark text-light ms-4">Something Title</h3>
+                </div>
+                <div class="ps-5 py-4">
+
+                  <p class="mb-4 text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="#" class="btn btn-haver-primary btn-light text-primary text-capitalize px-3 py-2">read more</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <!-- The Newsletter Section -->
+       <!-- TO-DO: Set a Image for background -->
+      <section class="text-bg-primary py-5">
+        <div class="container">
+          <div class="row py-5">
+            <!-- Part Left -->
+            <div class="col-12 col-lg-6">
+              <h2 class="fw-bolder display-6 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <p class="mb-5 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum at assumenda molestias deleniti eum praesentium ipsa ex fugiat tempore.</p>
+              <div class="bg-white w-100 p-3 rounded">
+                <div class="bg-primary d-flex align-items-center rounded py-3 px-2">
+                  <div class="">
+                    <img src="https://fakeimg.pl/45x45" alt="icon" class="rounded-circle">
+                  </div>
+                  <span class="text-white fs-6 fw-bolder ms-3">Phone Number: +9123456789</span>
+                </div>
+              </div>
+            </div>
+            <!-- Part Right -->
+            <div class="col-12 col-lg-6">
+              <form action="#" class="bg-white rounded p-5">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="text" class="form-control text-dark border-2 border-primary-subtle" id="username" placeholder="Username">
+                        <label for="username" class="text-secondary">Username</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="email" class="form-control text-dark border-2 border-primary-subtle" id="email" placeholder="Email">
+                        <label for="email" class="text-secondary">Email Address</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control text-dark border-2 border-primary-subtle" id="pass" placeholder="Password">
+                        <label for="pass" class="text-secondary">Password</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control text-dark border-2 border-primary-subtle" id="conpass" placeholder="Confirm Password">
+                        <label for="conpass" class="text-secondary">Confirm Password</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <div class="form-floating">
+                        <textarea class="form-control text-dark border-primary-subtle border-2" id="text" style="height: 5rem;" rows="5"></textarea>
+                        <label for="text" class="text-secondary">Massage</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div>
+                      <bottun class="btn btn-primary py-3 px-5">Send</bottun>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Movies of the day Section -->
+      <section class="bg-body py-5">
+        <div class="container">
+          <h2 class="fs-1 my-5 text-center mx-auto" style="max-width: 25rem;">
+            Lorem ipsum dolor sit amet.
+          </h2>
+          <!-- The cards in the this section -->
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="https://fakeimg.pl/500x500" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">Card Name</h4>
+                  <span>Cinema</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">Card Name</h4>
+                    <span>Cinema</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="https://fakeimg.pl/500x500" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">Card Name</h4>
+                  <span>Cinema</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">Card Name</h4>
+                    <span>Cinema</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="https://fakeimg.pl/500x500" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">Card Name</h4>
+                  <span>Cinema</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">Card Name</h4>
+                    <span>Cinema</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="text-center rounded bg-white shadow pb-3 card-hover overflow-hidden">
+
+                <div class="banner overflow-hidden w-100">
+                  <img src="https://fakeimg.pl/500x500" alt="Card Image" class="card-img rounded-top">
+                </div>
+
+                <div class="card-content pt-3">
+                  <h4 class="fs-5">Card Name</h4>
+                  <span>Cinema</span>
+
+                  <div class="content-hover py-3 bg-white">
+                    <h4 class="fs-5">Card Name</h4>
+                    <span>Cinema</span>
+
+                    <div class="card-btn-container">
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                      <div class="card-btn rounded">
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Last Section -->
+      <section class="text-center bg-body py-5">
+        <div class="container">
+          <h2 class="fs-1 mx-auto mb-5" style="max-width: 25rem;">Lorem ipsum dolor sit amet consectetur.</h2>
+          <div class="row">
+            <div class="col-lg-3 d-none d-lg-block p-0">
+              <div class="position-relative">
+                <div class="ani-left-top ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+                <div class="ani-left-middle ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+                <div class="ani-left-bottom ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-0">
+              <div class="">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                  <!-- The carousel content -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://fakeimg.pl/100x100" class="d-block mx-auto mb-4 rounded" alt="First Image">
+                      <div class=" text-dark text-center w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis accusamus, ipsum, laborum autem non saepe aperiam repudiandae delectus ab nam ut at in vitae, tenetur sapiente. Voluptatem, tempora hic!</p>
+                        <h5>First slide label</h5>
+                        <span>Some</span>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="https://fakeimg.pl/100x100" class="d-block mx-auto mb-4 rounded" alt="Second Image">
+                      <div class=" text-dark text-center w-100">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facilis accusamus, ipsum, laborum autem non saepe aperiam repudiandae delectus ab nam ut at in vitae, tenetur sapiente. Voluptatem, tempora hic!</p>
+                        <h5>Second slide label</h5>
+                        <span>Some</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- The bottun for slide -->
+                  <div class="mt-4">
+                    <button class="bg-primary btn p-0" style="height: 2.5rem; width: 2.5rem;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="bg-primary btn p-0" style="height: 2.5rem; width: 2.5rem;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 d-none d-lg-block p-0">
+              <div class="position-relative">
+                <div class="ani-right-top ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+                <div class="ani-right-middle ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+                <div class="ani-right-bottom ani rounded p-1 border-primary-subtle position-absolute">
+                  <img src="https://fakeimg.pl/100x100" alt="Image Icon" class="w-100 rounded">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer
       class="container-fluid text-bg-dark mt-5 pt-5"
       data-wow-delay="0.1s"
@@ -142,6 +593,7 @@
             <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
           </div>
           <!-- #Footer Links -->
+           <!-- TO-DO: fix the hover effect -->
           <div class="col-lg-3 col-md-6">
             <h5 class="text-light mb-4">Lorem, ipsum.</h5>
             <a href="#" class="btn btn-link btn-footer me-1 mb-1"

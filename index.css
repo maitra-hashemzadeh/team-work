@@ -9,6 +9,7 @@
     transform: scale(1);
   }
 }
+/* Costumize */
 .btn-danger:hover {
   background-color: #ef5350 !important;
 }

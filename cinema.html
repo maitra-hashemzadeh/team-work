@@ -57,18 +57,15 @@
       <!-- topbar-end -->
       <nav class="navbar navbar-expand-lg bg-light px-4 px-lg-5 sticky-top">
         <div class="container-fluid">
-          <!-- #Logo & Website Title -->
           <a class="navbar-brand d-flex align-items-center" href="#">
             <h1 class="m-0">
               <img
-                src="./images/Movie-logo.avif"
+                src="./images/Movie-logo.avif" style="width: 100PX;"
                 alt="Logo"
-                class="me-2 img-fluid"
-                style="width: 100px"
-              />APSCinema
+                class="me-2 img-fluid first-img"
+              />Bootcamp
             </h1>
           </a>
-          <!-- #Menu Button in Mobile Size -->
           <button
             class="navbar-toggler"
             type="button"
@@ -80,16 +77,18 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- #Menu -->
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <div
               class="navbar-nav bg-light pe-4 py-3 py-lg-0 rounded mx-auto d-flex align-items-center bg-white"
             >
-              <a class="nav-item nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-item nav-link active"
+                aria-current="page"
+                href="./index.html"
                 >Home</a
               >
               <a class="nav-item nav-link" href="./cinema.html">Cinema</a>
-              <a class="nav-item nav-link" href="#">Actors</a>
+              <a class="nav-item nav-link" href="./actors.html">Actors</a>
               <div class="nav-item dropdown">
                 <a
                   class="nav-item nav-link dropdown-toggle ps-"
@@ -97,25 +96,30 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Menu Item 4
+                  Categories
                 </a>
                 <div class="dropdown-menu border-0 m-0 bg-white">
-                  <a class="dropdown-item" href="#">Sub Menu 1</a>
-                  <a class="dropdown-item" href="#">Sub Menu 2</a>
-                  <a class="dropdown-item" href="#">Sub Menu 3</a>
-                  <a class="dropdown-item" href="#">Sub Menu 4</a>
+                  <a class="dropdown-item" href="./page-1.html"
+                    >Latest releases</a
+                  >
+                  <a class="dropdown-item" href="./page-2.html">Bestsellers</a>
+                  <a class="dropdown-item" href="./page-3.html">Movies</a>
+                  <a class="dropdown-item" href="./page-4.html">Animation</a>
                 </div>
                 <div class="show d-none">
-                  <a class="dropdown-subitem" href="#">Sub Menu 1</a>
-                  <a class="dropdown-subitem" href="#">Sub Menu 2</a>
-                  <a class="dropdown-subitem" href="#">Sub Menu 3</a>
-                  <a class="dropdown-subitem" href="#">Sub Menu 4</a>
+                  <a class="dropdown-subitem" href="./page-1.html"
+                    >Latest releases</a
+                  >
+                  <a class="dropdown-subitem" href="./page-2.html"
+                    >Bestsellers</a
+                  >
+                  <a class="dropdown-subitem" href="./page-3.html">Movies</a>
+                  <a class="dropdown-subitem" href="./page-4.html">Animation</a>
                 </div>
               </div>
-              <a class="nav-item nav-link" href="#">Menu Item 5</a>
+              <a class="nav-item nav-link" href="./page5.html">Address</a>
             </div>
           </div>
-          <!-- #SignIn Button -->
           <button type="button" class="btn btn-primary px-3 d-none d-lg-block">
             SignIn
           </button>

@@ -3,7 +3,7 @@
   max-width: 80px;
 }
 .second-img {
-  background-image: url(https://www.bollywoodhungama.com/wp-content/uploads/2024/01/The-Beekeeper-English-1.jpg);
+  background-image: url(https://vfxvoice.com/wp-content/uploads/2022/04/PIX-2-Character-expression-sheet-Hyun-Huh-model-Jorge-Capote.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
@@ -34,47 +34,26 @@
 .item-3 {
   color: #015fc9 !important;
 }
-.ani {
-  border: 0.1rem dashed;
-  animation: scale-icon 1.5s linear infinite;
-  /* position: absolute; */
+.carousel-item img {
+  width: 100%;
+  height: auto;
 }
-
-.ani-left-top {
-  width: 70px;
-  height: 70px;
-  top: 2rem;
-  right: 2rem;
+.side-images img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
-.ani-left-middle {
-  width: 60px;
-  height: 60px;
-  top: 10rem;
-  left: 2rem;
+.img-one{
+  width: 100px!important;
+  height: 100px!important;
 }
-.ani-left-bottom {
-  width: 50px;
-  height: 50px;
-  bottom: -19rem;
-  right: 2rem;
+.img-two{
+  width: 100px!important;
+  height: 100px!important;
 }
-.ani-right-top {
-  width: 70px;
-  height: 70px;
-  left: 10rem;
-  top: 2rem;
+.img-three{
+  width: 100px!important;
+  height: 100px!important;
 }
-.ani-right-middle {
-  width: 60px;
-  height: 60px;
-  top: 10rem;
-  left: 2rem;
-}
-.ani-right-bottom {
-  width: 50px;
-  height: 50px;
-  bottom: -19rem;
-  right: 2rem;
-}
-
 

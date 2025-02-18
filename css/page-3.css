@@ -1,94 +1,94 @@
 .first-img {
-    max-height: 80px;
-    max-width: 80px;
-  }
-  .second-img {
-    background-image: url(https://www.bollywoodhungama.com/wp-content/uploads/2024/01/The-Beekeeper-English-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-  }
-  /* for distans ask qu from MR */
-  .Menu {
-    font-size: 3rem !important;
-    font-weight: 700px !important;
-  }
-  .item-1{
-    text-decoration: none;
-  }
-  .item-1:hover{
-    color: #015fc9 !important; ;
-  }
-  .item-2{
-    text-decoration: none;
-  }
-  .item-2::before{
+  max-height: 80px;
+  max-width: 80px;
+}
+.second-img {
+  background-image: url(https://professorx.nl/wp-content/uploads/2025/02/captain-america-brave-new-world.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+/* for distans ask qu from MR */
+.Menu {
+  font-size: 3rem !important;
+  font-weight: 700px !important;
+}
+.item-1 {
+  text-decoration: none;
+}
+.item-1:hover {
+  color: #015fc9 !important;
+}
+.item-2 {
+  text-decoration: none;
+}
+.item-2::before {
   content: "/";
-  }
-  .item-2:hover{
-    color: #015fc9 !important; ;
-  }
-  .item-3::before{
-    content: "/";
-    }
-    .item-3{
-      color: #015fc9!important;
-    } 
-    .card-title {
-      max-width: 23rem!important;
-    }
-    
-    .card-hover {
-      transition: all 0.3s ease-in-out!important;
-    }
-    
-    .card-hover:hover > .banner > .card-img {
-      transform: scale(1.1)!important;
-    }
-    
-    .card-hover:hover > .card-content > .content-hover {
-      transform: translateY(-6rem)!important;
-      opacity: 1;
-    }
-    
-    .card-img {
-      width: 100%;
-      transition: all 0.3s ease-in-out!important;
-    }
-    
-    .card-content {
-      height: 4.5rem!important;
-      position: relative!important;
-    }
-    
-    .content-hover {
-      position: absolute!important;
-      top: 100%!important;
-      left: 0!important;
-      width: 100%!important;
-      background-color: white!important;
-      transition: all 0.3s ease-in-out!important;
-      opacity: 0!important;
-      padding: 10px!important;
-    }
-    
-    .card-btn-container {
-      display: flex;
-      justify-content: center!important;
-      gap: 10px!important;
-      margin-top: 10px!important;
-    }
-    
-    .card-btn {
-      color: red!important;
-      background-color: white!important;
-      border: 1px solid red!important;
-      padding: 5px 10px!important;
-      border-radius: 50%!important;
-      transition: all 0.3s ease-in-out!important;
-    }
-    
-    .card-btn:hover {
-      background-color: red!important;
-      color: white!important;
-    }
+}
+.item-2:hover {
+  color: #015fc9 !important;
+}
+.item-3::before {
+  content: "/";
+}
+.item-3 {
+  color: #015fc9 !important;
+}
+.card-title {
+  max-width: 23rem !important;
+}
+
+.card-hover {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-hover:hover > .banner > .card-img {
+  transform: scale(1.1) !important;
+}
+
+.card-hover:hover > .card-content > .content-hover {
+  transform: translateY(-6rem) !important;
+  opacity: 1;
+}
+
+.card-img {
+  width: 100%;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-content {
+  height: 4.5rem !important;
+  position: relative !important;
+}
+
+.content-hover {
+  position: absolute !important;
+  top: 100% !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: white !important;
+  transition: all 0.3s ease-in-out !important;
+  opacity: 0 !important;
+  padding: 10px !important;
+}
+
+.card-btn-container {
+  display: flex;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+
+.card-btn {
+  color: red !important;
+  background-color: white !important;
+  border: 1px solid red !important;
+  padding: 5px 10px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.card-btn:hover {
+  background-color: red !important;
+  color: white !important;
+}
